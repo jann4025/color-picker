@@ -71,7 +71,7 @@ function start() {
 
 
 
-        const hsl = `${Math.floor(h)}, ${Math.floor(s)}%, ${Math.floor(s)}%`;
+        const hsl = `${Math.floor(h)}, ${Math.floor(s)}%, ${Math.floor(l)}%`;
 
         showColor(color, rgb, hsl);
 
