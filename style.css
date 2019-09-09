@@ -12,6 +12,13 @@ h1 {
     font-size: 3em;
 }
 
+figcaption {
+    position: absolute;
+    top: 34.2%;
+    left: 46.5%;
+    transform: translate(-50%, -50%);
+}
+
 .color-selector {
     position: absolute;
     top: 50%;
