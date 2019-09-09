@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Tajawal', sans-serif;
+}
+
+h1 {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+
+.color-selector {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ecf0f1;
+    width: 300px;
+    height: 300px;
+}
+
+.inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    border-radius: .8rem;
+    background-color: #f35334;
+    margin-top: .3vw;
+    margin-bottom: .3vw;
+}
+
+p {
+    margin-top: .3vw;
+}
