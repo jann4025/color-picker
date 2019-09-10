@@ -4,20 +4,6 @@
     font-family: 'Tajawal', sans-serif;
 }
 
-h1 {
-    position: absolute;
-    top: 32%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3em;
-}
-
-figcaption {
-    position: absolute;
-    top: 34.2%;
-    left: 46.5%;
-    transform: translate(-50%, -50%);
-}
 
 .color-selector {
     position: absolute;
