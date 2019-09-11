@@ -11,8 +11,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #ecf0f1;
-    width: 300px;
-    height: 300px;
+    width: auto;
+    height: auto;
 }
 
 .inner {
@@ -29,7 +29,19 @@
     background-color: #f35334;
     margin-top: .3vw;
     margin-bottom: .3vw;
+    margin-left: .5vw;
+    margin-right: .5vw;
+
 }
+
+.info p {
+    margin-left: .8vw;
+}
+
+.boxes {
+    display: flex;
+}
+
 
 p {
     margin-top: .3vw;
