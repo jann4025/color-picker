@@ -12,15 +12,25 @@
 </head>
 
 <body>
-
+    <h1>Color picker</h1>
     <div class="color-selector">
         <div class="inner">
-            <label for="color-picker">Select color:</label>
-            <input type="color" name="color-picker" id="color-picker" value="#f35334">
+            <div class="selection">
+                <select name="color-scheme" id="color-scheme">
+                    <option value="analogous">Analogous</option>
+                    <option value="monochromatic">Monochromatic</option>
+                    <option value="triade">Triade</option>
+                    <option value="complementary">Complementary</option>
+                    <option value="compound">Compound</option>
+                    <option value="shades">Shades</option>
+                </select>
+                <label for="color-picker">Select color:</label>
+                <input type="color" name="color-picker" id="color-picker" value="#f35334">
+            </div>
             <div class="boxes">
 
                 <div class="color1">
-                    <div class="box"></div>
+                    <div class="box" style="background-color: #f35334;"></div>
                     <div class="info">
                         <p class="hex-output">HEX: #f35334 </p>
                         <p class="rgb-output">rgb(243, 83, 52)</p>
@@ -28,7 +38,7 @@
                     </div>
                 </div>
                 <div class="color2">
-                    <div class="box"></div>
+                    <div class="box" style="background-color: #f35334;"></div>
                     <div class="info">
                         <p class="hex-output">HEX: #f35334 </p>
                         <p class="rgb-output">rgb(243, 83, 52)</p>
@@ -36,7 +46,7 @@
                     </div>
                 </div>
                 <div class="source-color">
-                    <div class="box"></div>
+                    <div class="box" style="background-color: #f35334;"></div>
                     <div class="info">
                         <p class="hex-output">HEX: #f35334 </p>
                         <p class="rgb-output">rgb(243, 83, 52)</p>
@@ -44,7 +54,7 @@
                     </div>
                 </div>
                 <div class="color3">
-                    <div class="box"></div>
+                    <div class="box" style="background-color: #f35334;"></div>
                     <div class="info">
                         <p class="hex-output">HEX: #f35334 </p>
                         <p class="rgb-output">rgb(243, 83, 52)</p>
@@ -52,7 +62,7 @@
                     </div>
                 </div>
                 <div class="color4">
-                    <div class="box"></div>
+                    <div class="box" style="background-color: #f35334;"></div>
                     <div class="info">
                         <p class="hex-output">HEX: #f35334 </p>
                         <p class="rgb-output">rgb(243, 83, 52)</p>

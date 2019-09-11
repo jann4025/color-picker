@@ -15,6 +15,26 @@
     height: auto;
 }
 
+
+.selection {
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    font-size: 2em;
+}
+
 .inner {
     position: absolute;
     top: 50%;
