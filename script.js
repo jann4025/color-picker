@@ -89,13 +89,50 @@ function start() {
 
     function showColor(id, h, s, l) {
         const colorId = id;
-        const box = document.querySelector(`.color${colorId} .box`).style.backgroundColor;
-        console.log(box);
+        let box = document.querySelector(`.color${colorId} .box`).style.backgroundColor;
         document.querySelector(`.color${colorId} .box`).style.backgroundColor = `hsl(${h}, ${s}%, ${l}%)`;
-        // document.querySelector(`.source-color .info .hex-output`).textContent = `HEX: ${color}`;
-        document.querySelector(`.color${colorId} .info .rgb-output`).textContent = box;
-        document.querySelector(`.color${colorId} .info .hsl-output`).innerHTML = `HSL: ${h}, ${s}, ${l}`;
+        document.querySelector(`.color${colorId} .info .rgb-output`).innerHTML = box;
+        document.querySelector(`.color${colorId} .info .hsl-output`).innerHTML = `HSL: ${h}, ${s}%, ${l}%`;
+        rgbToHex(id, box);
     }
+
+    function rgbToHex(colorId, box) {
+        box = box.split(",");
+        console.log(box);
+        let r = box[0].slice(4, 7);
+        r = parseInt(r, 10);
+        let g = box[1].slice(1, 4);
+        g = parseInt(g, 10);
+        let b = box[2].slice(1, 4);
+        b = parseInt(b, 10);
+        let rgb = {};
+        rgb.r = r;
+        rgb.g = g;
+        rgb.b = b;
+        console.log(rgb);
+
+        let rgbToHex = function (rgb) {
+            let hex = Number(rgb).toString(16);
+            if (hex.length < 2) {
+                hex = "0" + hex;
+            }
+            return hex;
+        };
+
+        console.log(rgbToHex(r));
+
+        let colorHex = function (r, g, b) {
+            let red = rgbToHex(r);
+            let green = rgbToHex(g);
+            let blue = rgbToHex(b);
+            return red + green + blue;
+        };
+        document.querySelector(`.color${colorId} .info .hex-output`).textContent = `HEX: #${colorHex(r,g,b)}`;
+    }
+
+
+
+
 
 
     function convertColoHsl(num, hsl) {
@@ -107,22 +144,20 @@ function start() {
         s = parseInt(s, 10);
         let l = hsl[2].slice(0, -1);
         l = parseInt(l, 10);
-        if (id === 1) {
-            h = h - 60;
-        } else if (id === 2) {
-            h = h - 30;
-        } else if (id === 3) {
-            h = h += 9;
-        } else if (id === 4) {
-            h = h += 18;
+        if (scheme == "analogous") {
+            if (id === 1) {
+                h = h - 60;
+            } else if (id === 2) {
+                h = h - 30;
+            } else if (id === 3) {
+                h = h += 9;
+            } else if (id === 4) {
+                h = h += 18;
+            }
         }
         showColor(id, h, s, l);
-        hslToRgb(h, s, l);
-        console.log(hslToRgb(h, s, l));
-    }
-
-    function hslToRgb(h, s, l) {
 
     }
+
 
 }
