@@ -141,8 +141,6 @@ function start() {
         s = parseInt(s, 10);
         let l = hsl[2].slice(0, -1);
         l = parseInt(l, 10);
-
-
         if (scheme == "analogous") {
             h = hsl[0].slice(0, -1);
             h = parseInt(h, 10);

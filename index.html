@@ -16,14 +16,17 @@
     <div class="color-selector">
         <div class="inner">
             <div class="selection">
-                <select name="color-scheme" id="color-scheme">
-                    <option value="analogous">Analogous</option>
-                    <option value="monochromatic">Monochromatic</option>
-                    <option value="triade">Triade</option>
-                    <option value="complementary">Complementary</option>
-                    <option value="compound">Compound</option>
-                    <option value="shades">Shades</option>
-                </select>
+                <div class="harmony">
+                    <label for="color-scheme">Select Color Harmony</label>
+                    <select name="color-scheme" id="color-scheme">
+                        <option value="analogous">Analogous</option>
+                        <option value="monochromatic">Monochromatic</option>
+                        <option value="triade">Triade</option>
+                        <option value="complementary">Complementary</option>
+                        <option value="compound">Compound</option>
+                        <option value="shades">Shades</option>
+                    </select>
+                </div>
                 <label for="color-picker">Select color:</label>
                 <input type="color" name="color-picker" id="color-picker" value="#d3efff">
             </div>
