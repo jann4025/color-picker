@@ -9,6 +9,7 @@ function start() {
 
 
 
+
     function selectColor(event) {
         color = event.target.value;
         hexToRgb(color);
